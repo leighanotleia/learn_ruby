@@ -41,15 +41,18 @@ class TestCalculator < MiniTest::Test
   def test_computes_sum_of_many_numbers
     assert_equal 25, sum([1,3,5,7,9])
   end
-end
+
   # Extra Credit:
   # If you feel you're up for the challenge, fill in the missing code in the tests below,
   # based off the descriptions, and get them to pass.
-#   def test_multiplies_two_numbers
-#   end
-#
-#   def test_multiplies_several_numbers
-#   end
+  def test_multiplies_two_numbers
+    assert_equal 10, multiply([2, 5])
+  end
+
+  def test_multiplies_several_numbers
+    assert_equal 30, multiply([3,5,2])
+  end
+end
 #
 # # http://en.wikipedia.org/wiki/Factorial
 #   def test_computes_factorial_0
